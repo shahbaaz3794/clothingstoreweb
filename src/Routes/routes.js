@@ -1,17 +1,18 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import SignIn from '../Pages/signIn';
+import React from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import SignIn from "../Pages/signIn";
+import PrivateRoute from "./privateRoutes";
+import Home from "../Pages/home";
 
-const Routes=()=> {
+const Routes = () => {
   return (
     <>
-      <BrowserRouter>
-        <Switch>
-          <Route path="/" exact component={SignIn}/>
-        </Switch>
-      </BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={SignIn} />
+        <PrivateRoute path="/home" exact component={Home} />
+      </Switch>
     </>
   );
-}
+};
 
 export default Routes;
