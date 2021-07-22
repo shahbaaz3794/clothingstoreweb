@@ -4,7 +4,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Slider from "infinite-react-carousel";
 
 const useStyles = makeStyles((theme) => ({
-  root: {},
+  imageDiv: {
+    width: "100%",
+    height: 430,
+  },
 }));
 
 const HomeCarousel = () => {
@@ -13,20 +16,30 @@ const HomeCarousel = () => {
   return (
     <>
       <Slider dots>
-        <div>
-          <h3>1</h3>
+        <div className={classes.imageDiv}>
+          <img
+            style={{ height: "100%", width: "100%", objectFit:"cover"}}
+            src="https://i.ibb.co/Jx7xqf4/pexels-august-de-richelieu-4427816.jpg"
+            alt="image"
+          />
         </div>
         <div>
-          <h3>2</h3>
+          <img
+            src="https://i.ibb.co/GV08J9f/pexels-pixabay-267202.jpg"
+            alt="image"
+          />
         </div>
         <div>
-          <h3>3</h3>
+          <img
+            src="https://i.ibb.co/sK92ZhC/pexels-karolina-grabowska-4210860.jpg"
+            alt="image"
+          />
         </div>
         <div>
-          <h3>4</h3>
+          <img src="https://i.ibb.co/FDwNR9d/img1.jpg" alt="image" />
         </div>
         <div>
-          <h3>5</h3>
+          <img src="https://i.ibb.co/7G5qqGY/1.jpg" alt="image" />
         </div>
       </Slider>
     </>
