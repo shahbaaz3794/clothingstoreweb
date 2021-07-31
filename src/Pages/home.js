@@ -4,6 +4,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import TopAppBar from "../components/appBar";
 import HomeCarousel from "../components/homeCarousel";
 import Card from '@material-ui/core/Card';
+import HomeContent from "../components/homeContent";
+import HomeCategories from "../components/homeCategories";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -16,9 +18,11 @@ const Home = () => {
     <>
       <div className={classes.root}>
         <TopAppBar />
+        <HomeCategories />
         <Card style={{marginTop: 20, marginLeft: 10, marginRight: 10, marginBottom: 15}}>
           <HomeCarousel />
         </Card>
+        <HomeContent />
       </div>
     </>
   );

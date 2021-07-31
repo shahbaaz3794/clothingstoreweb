@@ -21,41 +21,41 @@ const HomeCarousel = () => {
         autoplay={true}
         autoplaySpeed={3000}
         dots={false}
-        prevArrow={<GrPrevious size={30} color="#FFF" />}
-        nextArrow={<GrNext size={30} color="#FFF" />}
+        prevArrow={<GrPrevious size={30} />}
+        nextArrow={<GrNext size={30} />}
       >
-        <div className={classes.imageDiv}>
+        <div>
           <img
             style={{ height: "100%", width: "100%", objectFit: "cover" }}
-            src="https://i.ibb.co/Jx7xqf4/pexels-august-de-richelieu-4427816.jpg"
+            src="https://i.ibb.co/fGJXrqf/c1.webp"
             alt="pic"
           />
         </div>
         <div>
           <img
             style={{ height: "100%", width: "100%", objectFit: "cover" }}
-            src="https://i.ibb.co/GV08J9f/pexels-pixabay-267202.jpg"
+            src="https://i.ibb.co/F7hvfwv/c2.webp"
             alt="pic"
           />
         </div>
         <div>
           <img
             style={{ height: "100%", width: "100%", objectFit: "cover" }}
-            src="https://i.ibb.co/sK92ZhC/pexels-karolina-grabowska-4210860.jpg"
+            src="https://i.ibb.co/j8Ss8fw/c3.webp"
             alt="pic"
           />
         </div>
         <div>
           <img
             style={{ height: "100%", width: "100%", objectFit: "cover" }}
-            src="https://i.ibb.co/FDwNR9d/img1.jpg"
+            src="https://i.ibb.co/9t2pkZW/c4.webp"
             alt="pic"
           />
         </div>
         <div>
           <img
             style={{ height: "100%", width: "100%", objectFit: "cover" }}
-            src="https://i.ibb.co/7G5qqGY/1.jpg"
+            src="https://i.ibb.co/tqGPK2g/c5.webp"
             alt="pic"
           />
         </div>
