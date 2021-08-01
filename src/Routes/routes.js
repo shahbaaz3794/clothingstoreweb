@@ -3,6 +3,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import SignIn from "../Pages/signIn";
 import PrivateRoute from "./privateRoutes";
 import Home from "../Pages/home";
+import Men from "../Pages/men";
 
 const Routes = () => {
   return (
@@ -10,6 +11,7 @@ const Routes = () => {
       <Switch>
         <Route path="/" exact component={SignIn} />
         <PrivateRoute path="/home" exact component={Home} />
+        <PrivateRoute path="/men" exact component={Men} />
       </Switch>
     </>
   );

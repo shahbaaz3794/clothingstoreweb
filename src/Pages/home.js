@@ -6,6 +6,7 @@ import HomeCarousel from "../components/homeCarousel";
 import Card from '@material-ui/core/Card';
 import HomeContent from "../components/homeContent";
 import HomeCategories from "../components/homeCategories";
+import Footer from "../components/footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -23,6 +24,7 @@ const Home = () => {
           <HomeCarousel />
         </Card>
         <HomeContent />
+        <Footer />
       </div>
     </>
   );
